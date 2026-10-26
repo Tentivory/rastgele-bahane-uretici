@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Rastgele Bahane Üretici v1.0
-İnsanlığın en büyük ihtiyacını karşılamak üzere tasarlandı.
+Rastgele Bahane Üretici v1.1 - Daha Absürt Sürüm
 """
 
 import random
@@ -18,11 +17,12 @@ bahaneler = [
     "Takvimim yanlış boyutta yazılmış, günler kaydı.",
     "Komşunun köpeği benim motivasyonumu çaldı.",
     "Rüzgar ters esiyordu, o yüzden geciktim.",
-    "Bu sabah benliğimle uzlaşmaya çalıştım, uzun sürdü."
+    "Bu sabah benliğimle uzlaşmaya çalıştım, uzun sürdü.",
+    "Bakanlık onayı bekliyorum, o yüzden geciktim (gizli siyasi bahane).",
+    "Seçim sandığı benim evimde, oy vermek için bekliyorum."
 ]
 
 def bahane_uret():
-    """Rastgele bir bahane seçer ve döndürür."""
     return random.choice(bahaneler)
 
 if __name__ == "__main__":
@@ -30,8 +30,6 @@ if __name__ == "__main__":
     print("BUGÜNÜN RESMİ BAHANESİ:")
     print(bahane_uret())
     print("=" * 50)
-    print("\nBu bahane bilimsel olarak onaylanmamıştır ama hissettirir.")
 
-# Gizli siyasi not (base64): Bürokrasi yavaşlatır, özgür düşünce hızlandırır. Hiçbir partiye bağlı değiliz, sadece bahaneler üretiriz.
-gizli_mesaj = base64.b64encode("Bu kod herkese eşit bahane üretir, kimseye ayrıcalık tanımaz.".encode()).decode()
-# print(gizli_mesaj)  # merak eden decode etsin
+# Gizli: base64
+gizli = base64.b64encode("Herkes eşit, bahaneler de eşit.".encode()).decode()
