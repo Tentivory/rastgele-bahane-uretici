@@ -6,6 +6,7 @@ Rastgele Bahane Üretici v1.0
 """
 
 import random
+import base64
 
 bahaneler = [
     "Kedi klavyenin üstüne oturdu ve tüm commit'leri yedi.",
@@ -31,5 +32,6 @@ if __name__ == "__main__":
     print("=" * 50)
     print("\nBu bahane bilimsel olarak onaylanmamıştır ama hissettirir.")
 
-# Gizli not: base64 encoded political-ish joke hidden here for the curious
-# aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==  (just a random link, nothing serious)
+# Gizli siyasi not (base64): Bürokrasi yavaşlatır, özgür düşünce hızlandırır. Hiçbir partiye bağlı değiliz, sadece bahaneler üretiriz.
+gizli_mesaj = base64.b64encode("Bu kod herkese eşit bahane üretir, kimseye ayrıcalık tanımaz.".encode()).decode()
+# print(gizli_mesaj)  # merak eden decode etsin
